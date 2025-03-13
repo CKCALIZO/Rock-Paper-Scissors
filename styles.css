@@ -13,20 +13,44 @@
     gap: 85px;
 }
 .main-container .top-content .main-heading {
+    display: flex;
+    justify-content: center;
+    color: #1667fd;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.main-container .top-content .scoreboard {
+    display:flex;
+    justify-content: end;
+    gap:10px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding:10px;
     color: #1667fd;
     margin: 5px 0;
 }
-.Button2{
-   display:none; 
-}
-#Start-Button{
+
+.main-container .top-content .Start-Button{
     display:block;
     margin:auto;
     text-align: center;
 }
-/* .button-container{
-display:flex;
-flex-direction:row;
-justify-content: center;
-gap:10px;
-} */
+
+.main-container .mid-content{
+    display:flex;
+    align-items: center;
+}
+.main-container .bottom-content .game-state {
+    display: flex;  
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.main-container .bottom-content .game-state .game-state-button {
+    display: none; 
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
