@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-content">
+             <h1 class="main-heading">Rock Paper Scissors</h1>
+                <p id="result"></p>
+                    <img id="myImage" src="assets/images/rock-paper-scissors.png" style="width:100px">
+                        <button onClick = "playGame()" id="Start-Button">Click to play</button>
+                        <div class="scoreboard">
+                             <p>Player Score: <span id="playerScore"></span></p>
+                             <p>CPU Score: <span id="cpuScore"></span></p>
+                        </div>
+        </div>
+        <div class="mid-content">
+             <button onclick="PlayerMoves('Rock')">
+                <img src="assets/images/fist.png" alt="Rock" width="100">
+             </button>
+    
+            <button onclick="PlayerMoves('Paper')">
+                <img src="assets/images/hand-paper.png" alt="Paper" width="100">
+            </button>
+    
+            <button onclick="PlayerMoves('Scissors')">
+                <img src="assets/images/scissors.png" alt="Scissors" width="100">
+            </button>
+        </div>
+
+        <div class="bottom-content">
+             <button onclick="PlayerMoves"></button>
+                <div class="game-state">
+                    <button onclick="playGame()" class="Button2">Start</button>
+                    <button onclick="resetGame()" class="Button2">Quit</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
