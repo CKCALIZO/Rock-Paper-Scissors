@@ -32,23 +32,25 @@ function PlayerMoves(Pmoves){
 
 const CPU_moves = ["Rock", "Paper", "Scissors"];
 
-    function playGame() {
-        document.querySelectorAll(".Button2").forEach(button => {
-            button.style.display = "block";
-        document.getElementById("Start-Button").style.display = "none";
-        });
-    const result = CPU(CPU_moves);  
-    if (result == "Rock"){
+function playGame() {
+    document.querySelectorAll(".game-state-button").forEach(button => {
+        button.style.display = "block";
+    });
+
+    document.querySelector(".Start-Button").style.display = "none";
+
+    const result = CPU(CPU_moves);
+
+    if (result === "Rock") {
         document.getElementById("myImage").src = 'assets/images/fist.png';
+    } else if (result === "Paper") {
+        document.getElementById("myImage").src = 'assets/images/hand-paper.png';
+    } else {
+        document.getElementById("myImage").src = 'assets/images/scissors.png';
     }
-    else if (result == "Paper"){
-        document.getElementById("myImage").src ='assets/images/hand-paper.png';
-    }
-    else {
-        document.getElementById("myImage").src='assets/images/scissors.png';
-    }
-    document.getElementById("result").innerHTML = result;  
+    document.getElementById("result").innerHTML = result;
 }
+
 
 function determineWinner(playerMove, cpuMove) {
     if (playerMove === cpuMove) {
@@ -65,10 +67,11 @@ function determineWinner(playerMove, cpuMove) {
 }
 
 function resetGame() {
-    document.getElementById("myImage").src = 'assets/images/rock-paper-scissors.png'; 
-    document.getElementById("result").innerHTML = ""; 
-    document.getElementById("Start-Button").style.display = "block";
-    document.querySelectorAll(".Button2").forEach(button => {
+    document.getElementById("myImage").src = 'assets/images/rock-paper-scissors.png';
+    document.getElementById("result").innerHTML = "";
+    document.querySelector(".Start-Button").style.display = "block";
+    document.querySelectorAll(".game-state-button").forEach(button => {
         button.style.display = "none";
     });
 }
+
