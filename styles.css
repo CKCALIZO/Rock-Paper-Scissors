@@ -11,6 +11,12 @@
     justify-content: center;
     align-items: center;
     gap: 85px;
+    flex-direction: column;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 .main-container .top-content .main-heading {
     display: flex;
@@ -38,10 +44,15 @@
     text-align: center;
 }
 
-.main-container .mid-content{
+.main-container .mid-content {
     display:flex;
     align-items: center;
 }
+
+.main-container .mid-content .moves{
+    display: none;
+}
+
 .main-container .bottom-content .game-state {
     display: flex;  
     gap: 10px; 
