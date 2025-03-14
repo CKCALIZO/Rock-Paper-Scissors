@@ -12,12 +12,34 @@
     align-items: center;
     gap: 85px;
     flex-direction: column;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+
+.main-container .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#result{
+    margin-top: 50px;
+}
+#myImage{
+    display: block;
+    margin-top: 35px;
+}
+
+.main-container .top-content .scoreboard{
+    display: flex;
+    display: none;
+    
+}
+
 .main-container .top-content .main-heading {
     display: flex;
     justify-content: center;
@@ -27,12 +49,12 @@
 }
 
 .main-container .top-content .scoreboard {
-    display:flex;
+    display:none;
     justify-content: end;
-    gap:10px;
+    gap:20px;
     position: absolute;
     top:10px;
-    right: 10px;
+    right: 20px;
     padding:10px;
     color: #1667fd;
     margin: 5px 0;
@@ -42,15 +64,35 @@
     display:block;
     margin:auto;
     text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .main-container .mid-content {
     display:flex;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .main-container .mid-content .moves{
     display: none;
+    gap:10px;
+    cursor: pointer;
+    padding: 10px;
+    outline:hidden;
+    border-radius: 5px;
+}
+
+.main-container .mid-content .moves:hover{
+    background-color: #c5c4c4;
+}
+
+.main-container .mid-content .moves:focus{
+    background-color: #1667fd;
 }
 
 .main-container .bottom-content .game-state {
@@ -61,7 +103,9 @@
 
 .main-container .bottom-content .game-state .game-state-button {
     display: none; 
-    padding: 10px 15px;
+    padding: 10px 25px;
     font-size: 16px;
     cursor: pointer;
+    outline: none;
+    border-radius: 5px;
 }
