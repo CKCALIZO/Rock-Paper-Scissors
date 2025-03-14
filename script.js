@@ -36,6 +36,9 @@ function playGame() {
     document.querySelectorAll(".game-state-button").forEach(button => {
         button.style.display = "block";
     });
+    document.querySelectorAll(".mid-content .moves").forEach(button => {
+        button.style.display = "block";
+    });
 
     document.querySelector(".Start-Button").style.display = "none";
 
@@ -73,5 +76,8 @@ function resetGame() {
     document.querySelectorAll(".game-state-button").forEach(button => {
         button.style.display = "none";
     });
-}
 
+    document.querySelectorAll(".moves").forEach(button => {
+        button.style.display = "none";
+ })
+}
