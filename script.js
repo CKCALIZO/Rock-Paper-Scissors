@@ -41,6 +41,7 @@ function playGame() {
     });
 
     document.querySelector(".Start-Button").style.display = "none";
+    document.querySelector(".scoreboard").style.display = "flex";
 
     const result = CPU(CPU_moves);
 
@@ -73,10 +74,10 @@ function resetGame() {
     document.getElementById("myImage").src = 'assets/images/rock-paper-scissors.png';
     document.getElementById("result").innerHTML = "";
     document.querySelector(".Start-Button").style.display = "block";
+    document.querySelector(".scoreboard").style.display = "none";
     document.querySelectorAll(".game-state-button").forEach(button => {
         button.style.display = "none";
     });
-
     document.querySelectorAll(".moves").forEach(button => {
         button.style.display = "none";
  })
