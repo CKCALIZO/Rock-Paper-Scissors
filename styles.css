@@ -69,6 +69,9 @@
     outline: none;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
 }
 
 .main-container .mid-content {
@@ -85,6 +88,9 @@
     padding: 10px;
     outline:hidden;
     border-radius: 5px;
+    -webkit-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
 }
 
 .main-container .mid-content .moves:hover{
@@ -108,4 +114,7 @@
     cursor: pointer;
     outline: none;
     border-radius: 5px;
+    -webkit-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
+    box-shadow: -5px 7px 12px -4px rgba(66, 68, 90, 1);
 }
